@@ -15,12 +15,14 @@
     <None Remove="AutoMapper" />
     <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
     <None Remove="Profiles\" />
+    <None Remove="Profiles\AfterMaps\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataModels\" />
     <Folder Include="Repositories\" />
     <Folder Include="DomainsModels\" />
     <Folder Include="Profiles\" />
+    <Folder Include="Profiles\AfterMaps\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.0" />
