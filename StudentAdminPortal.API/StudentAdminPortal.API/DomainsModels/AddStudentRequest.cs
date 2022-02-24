@@ -1,9 +1,9 @@
 ﻿using System;
 namespace StudentAdminPortal.API.DomainsModels
 {
-    public class UpdateStudentRequest
+    public class AddStudentRequest
     {
-        //public UpdateStudentRequest() {}
+        //public AddStudentRequest() {}
 
         public string FirstName { get; set; }
 
