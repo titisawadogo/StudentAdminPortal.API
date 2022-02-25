@@ -9,6 +9,7 @@ namespace StudentAdminPortal.API.Repositories
     public interface IStudentRepository
     {
         Task<List<Student>> GetStudentsAsync();
+
         Task<Student> GetStudentAsync(Guid studentId); //without the "s"
 
         Task<List<Gender>> GetGenderAsync();
@@ -20,5 +21,7 @@ namespace StudentAdminPortal.API.Repositories
         Task<Student> DeteleStudent(Guid studentId);
 
         Task<Student> AddStudent(Student request);
+
+        Task<bool> UpdateProfileImage(Guid studentId, string profileImageUrl);
     }
 }
