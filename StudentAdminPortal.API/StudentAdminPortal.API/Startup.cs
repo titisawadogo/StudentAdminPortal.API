@@ -18,6 +18,7 @@ using Microsoft.OpenApi.Models;
 using StudentAdminPortal.API.DataModels;
 using StudentAdminPortal.API.Repositories;
 using Swashbuckle.AspNetCore.Swagger;
+using FluentValidation.AspNetCore;
 
 namespace StudentAdminPortal.API
 {
@@ -48,6 +49,9 @@ namespace StudentAdminPortal.API
             });// this command will help communicate between the angular app and the api through CORS
 
             services.AddControllers();
+
+            services.AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<Startup>());
+
             services.AddDbContext<StudentAdminContext>(options => options.UseSqlServer(Configuration.GetConnectionString("StudentAdminPortalDb")));
 
             services.AddScoped<IStudentRepository, SqlStudentRepository>();
