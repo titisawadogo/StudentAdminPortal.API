@@ -1,3 +1,3 @@
 # StudentAdminPortal.API
 
-Intern Portal BackEnd Using .Net 5
+Intern Portal API Using .Net 5
